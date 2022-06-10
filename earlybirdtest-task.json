@@ -58,13 +58,13 @@
     }
   ],
   "placementConstraints": [],
-  "memory": "512",
+  "memory": "2048",
   "taskRoleArn": null,
   "compatibilities": [
     "EXTERNAL",
     "EC2"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:467432681913:task-definition/earlybirdstest-task:1",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:467432681913:task-definition/earlybirdstest-task:4",
   "family": "earlybirdstest-task",
   "requiresAttributes": [
     {
@@ -104,8 +104,8 @@
   ],
   "networkMode": null,
   "runtimePlatform": null,
-  "cpu": "512",
-  "revision": 1,
+  "cpu": null,
+  "revision": 4,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
   "proxyConfiguration": null,
