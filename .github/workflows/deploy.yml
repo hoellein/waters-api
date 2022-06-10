@@ -36,7 +36,7 @@ env:
   ECR_REPOSITORY: earlybirds           # set this to your Amazon ECR repository name
   ECS_SERVICE: earlybirdstest-service                 # set this to your Amazon ECS service name
   ECS_CLUSTER: earlybirdstest-cluster                 # set this to your Amazon ECS cluster name
-  ECS_TASK_DEFINITION: earlybirdstest-task.json  # set this to the path to your Amazon ECS task definition
+  ECS_TASK_DEFINITION: earlybirdtest-task.json  # set this to the path to your Amazon ECS task definition
                                                # file, e.g. .aws/task-definition.json
   CONTAINER_NAME: earlybirdstest-container           # set this to the name of the container in the
                                                # containerDefinitions section of your task definition
@@ -87,7 +87,7 @@ jobs:
       uses: aws-actions/amazon-ecs-render-task-definition@v1
       with:
         task-definition: ${{ env.ECS_TASK_DEFINITION }}
-        container-name: ${{ env.CONTAINER_NAME }}
+        container-name: ${{ env.CONTAINER_NAME }}         
         image: ${{ steps.build-image.outputs.image }}
 
     - name: Deploy Amazon ECS task definition
